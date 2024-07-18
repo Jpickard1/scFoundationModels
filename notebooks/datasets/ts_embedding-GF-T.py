@@ -10,6 +10,7 @@ from embed import *
 def main():
     job_number = int(sys.argv[1])
     print('Start')
+    print('GF + tGPT embeddings')
     print(job_number)
     
     DATAPATH = "/nfs/turbo/umms-indikar/shared/projects/DGC/data/tabula_sapiens/extract/"
@@ -27,17 +28,22 @@ def main():
     adata.var['ensembl_id'] = adata.var['ensemblid']
     adata.var['ensembl_id'] = adata.var['ensembl_id'].str.split('.').str[0]
 
-    embedAdGF = embed(adata, 'geneformer',
-                      output_directory = OUTPUTPATH,
-                      output_file      = os.path.splitext(os.path.basename(file))[0]
-                     )
-    embedAdGF.write(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_geneformer.h5ad'))
-
+    if os.path.exists(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_geneformer.h5ad')):
+        print("geneformer skipped because it was already created successfully.")
+    else:
+        embedAdGF = embed(adata, 'geneformer',
+                          output_directory = OUTPUTPATH,
+                          output_file      = os.path.splitext(os.path.basename(file))[0]
+                         )
+        embedAdGF.write(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_geneformer.h5ad'))
+    #if os.path.exists(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_Tgpt.h5ad')):
+    #   print("tGPT skipped because it was already created successfully.")
+    #else:
     embedAdTgpt = embed(adata, 'tGPT',
                       output_directory = OUTPUTPATH,
                       output_file      = os.path.splitext(os.path.basename(file))[0]
                      )
-    embedAdGF.write(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_Tgpt.h5ad'))
+    embedAdTgpt.write(os.path.join(OUTPUTPATH, os.path.splitext(os.path.basename(file))[0] + '_Tgpt.h5ad'))
     print('Job well done')
     sys.exit(0)
 

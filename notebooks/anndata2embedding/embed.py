@@ -237,6 +237,7 @@ def geneformerEmbed(adata, output_path=None, filename=None, verbose=False):
     #
     ###########################################
     if not os.path.exists(output_path):
+        print('Tokenizing the dataset')
         print("Loading gene tokenization data...") if verbose else None
         gene_token_dict, gene_keys, genelist_dict = load_gene_tokenization(token_path)
         print(f"Loaded {len(gene_token_dict)} gene tokens") if verbose else None
@@ -290,7 +291,9 @@ def geneformerEmbed(adata, output_path=None, filename=None, verbose=False):
         
         save_hf_dataset(dataset, output_path, overwrite=True)
         print("Processing completed successfully!") if verbose else None
-
+    else:
+        print('Dataset is pretokenized')
+        
     ###########################################
     #
     #   EMBED TOKENS WITH GENEFORMER TO ANNDATA
