@@ -2,6 +2,7 @@ import re
 import anndata as ad
 import numpy as np
 from torch.utils.data import DataLoader, Dataset
+from scipy.sparse import issparse
 
 class LineDataset(Dataset):
     def __init__(self, lines):
@@ -15,7 +16,7 @@ class LineDataset(Dataset):
 def get_top_genes_per_cell(adata, top_n=256):
     # Extract the data matrix
     X = adata.X
-    
+    print('using dense matrix')
     # Initialize a list to hold the top genes for each cell
     top_genes_per_cell = []
 
@@ -24,6 +25,8 @@ def get_top_genes_per_cell(adata, top_n=256):
         cell_expression = X[i, :]
         
         # Get the indices of the top N expression values
+        if issparse(cell_expression):
+            cell_expression = cell_expression.toarray().flatten()
         top_gene_indices = np.argsort(cell_expression)[-top_n:]
         
         # Get the gene names corresponding to the top indices
