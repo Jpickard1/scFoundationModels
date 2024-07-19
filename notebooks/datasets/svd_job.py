@@ -2,6 +2,7 @@ import sys
 import numpy as np
 import pickle
 from scipy.sparse import issparse
+from scipy.sparse.linalg import svds
 import anndata as ad
 
 def compute_svd(file, category, model):
@@ -20,9 +21,9 @@ def compute_svd(file, category, model):
         result['dimension'] = adata.X.shape[1]
         X = adata.X
         if issparse(X):
-            X = X.toarray()
-
-        sigmas = np.linalg.svd(X, compute_uv=False)
+            sigmas = svds(X, return_singular_vectors=False, k=100)
+        else:
+            sigmas = np.linalg.svd(X, compute_uv=False)
         result['sigmas'] = sigmas
     except Exception as e:
         print(f"Error processing {file}: {e}")
