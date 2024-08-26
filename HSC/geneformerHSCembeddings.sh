@@ -11,7 +11,7 @@
 #SBATCH --ntasks=1
 #SBATCH --gpus=1
 #SBATCH --output=/home/jpic/HSC-logs/%x-%j.log
-#SBATCH --array=1-252
+#SBATCH --array=252-253
 
 ### name this something like: geneformerHSCembeddings.sh
 ###    good practice is to pair the name of this bash script with the name of the python file it will run

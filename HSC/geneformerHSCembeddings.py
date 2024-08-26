@@ -317,7 +317,7 @@ def single_recipe(recipe_list):
 
     reprogramming_df.append(perturb)
 
-    reprogramming_df = pd.concat(reprogramming_df, ignore_index=True)
+    reprogramming_df = perturb # pd.concat(reprogramming_df, ignore_index=True)
 
     print(f"{reprogramming_df.shape=}")
 
