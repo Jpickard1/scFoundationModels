@@ -57,7 +57,7 @@ except:
 
 
 
-def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-indikar/shared/projects/foundation_models/experiments', output_file=None, verbose=False):
+def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-indikar/shared/projects/foundation_models/experiments', output_file=None, verbose=False, genenameloc='ensembl_id'):
     """
     This file embeds anndata and writes them to a .h5ad file on Turbo. embed.log was created in the default output directory to indicate what each generated file is.
     Params:
@@ -84,6 +84,10 @@ def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-
         else:
             output_file = model + '.h5ad'
 
+    if genenameloc == 'index':
+        adata.var['genenameloc'] = adata.var.index
+        genenameloc = 'genenameloc'
+
     #if not output_file.endswith('.h5ad'):
     #    output_file += '.h5ad'
 
@@ -104,7 +108,8 @@ def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-
     if model == 'scgpt':
         embed_adata = scgptEmbed(adata, model_directory)
     elif model == 'geneformer':
-        embed_adata = geneformerEmbed(adata, output_path = output_directory, filename=output_file, verbose=verbose)
+        print(f"{output_directory=}")
+        embed_adata = geneformerEmbed(adata, output_path = output_directory, filename=output_file, genenameloc=genenameloc, verbose=verbose)
     elif model == 'tGPT':
         embed_adata = tGPTembed(adata)
     else:
@@ -192,13 +197,34 @@ def tGPTembed(adata):
     emebddingAdata = ad.AnnData(X=features)
     return emebddingAdata
 
-def geneformerEmbed(adata, output_path=None, filename=None, verbose=False):
+def geneformerEmbed(adata, output_path=None, filename=None, genenameloc='ensembl_id', n_counts_column='n_counts', verbose=False):
     # Auth: Joshua Pickard
     #       jpic@umich.edu
     # Date: July 14, 2024
     # from gfUtils import *
 
-    output_path = os.path.join(output_path, filename + '.dataset')
+    if verbose:
+        print(f"{adata=}")
+        print(f"{output_path=}")
+        print(f"{type(output_path)=}")
+        print(f"{filename=}")
+        print(f"{type(filename)=}")
+        print(f"{filename + '.dataset'=}")
+        print(f"{genenameloc=}")
+        print(f"{verbose=}")
+
+    print(f"l212: {output_path=}")
+    print(f"l213: {type(output_path)=}")
+    print(f"l214: {(output_path==None)=}")
+    
+    # Ensure output_path and filename are valid before concatenation
+    if output_path is None:
+        raise ValueError("output_path cannot be None")
+    if filename is None:
+        raise ValueError("filename cannot be None")
+    
+    output_path = os.path.join(output_path, filename + ".dataset")
+
     
     # Default values
     MODEL_PATH          = "/nfs/turbo/umms-indikar/shared/projects/geneformer/geneformer-12L-30M/"
@@ -208,8 +234,8 @@ def geneformerEmbed(adata, output_path=None, filename=None, verbose=False):
     MODEL_INPUT_SIZE    = 2048
     NUMBER_PROC         = 16
     TARGET_SUM          = 10000
-    GENE_ID             = 'ensembl_id'
-    COUNTS_COLUMN       = 'n_counts'
+    GENE_ID             = genenameloc
+    COUNTS_COLUMN       = n_counts_column
     LAYER               = 'X'
     GENE_NAME_COLUMN    = 'gene_name'
 
