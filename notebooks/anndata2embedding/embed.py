@@ -57,7 +57,7 @@ except:
 
 
 
-def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-indikar/shared/projects/foundation_models/experiments', output_file=None, verbose=False, genenameloc='ensembl_id'):
+def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-indikar/shared/projects/foundation_models/experiments', output_file=None, verbose=False, genenameloc='ensembl_id', n_counts_column='n_counts'):
     """
     This file embeds anndata and writes them to a .h5ad file on Turbo. embed.log was created in the default output directory to indicate what each generated file is.
     Params:
@@ -88,10 +88,6 @@ def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-
         adata.var['genenameloc'] = adata.var.index
         genenameloc = 'genenameloc'
 
-    #if not output_file.endswith('.h5ad'):
-    #    output_file += '.h5ad'
-
-
     if output_directory is None:
         # default spot to save embeddings
         output_directory = '~/.cache/embeddings/'
@@ -109,7 +105,7 @@ def embed(adata, model, model_directory=None, output_directory='/nfs/turbo/umms-
         embed_adata = scgptEmbed(adata, model_directory)
     elif model == 'geneformer':
         print(f"{output_directory=}")
-        embed_adata = geneformerEmbed(adata, output_path = output_directory, filename=output_file, genenameloc=genenameloc, verbose=verbose)
+        embed_adata = geneformerEmbed(adata, output_path = output_directory, filename=output_file, genenameloc=genenameloc, n_counts_column=n_counts_column, verbose=verbose)
     elif model == 'tGPT':
         embed_adata = tGPTembed(adata)
     else:
