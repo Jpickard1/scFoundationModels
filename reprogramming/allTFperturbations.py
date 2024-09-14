@@ -12,6 +12,8 @@ import pandas as pd
 import scanpy as sp
 import anndata as ad # JP add this line
 import os
+import gc
+
 
 def translate_ids(list):
     # Extract base IDs from list_b by removing version numbers
@@ -212,5 +214,10 @@ for i in range(len(tf_ensid_list)):
             print(f"The file made from {val} could not be created.")
     except Exception as e:
         print(f"Error encountered at index {i}: {e}")
+
+    # Clean up large variables and trigger garbage collection
+    del adataDict, concatenated_adata  # Delete large objects
+    gc.collect()  # Manually run garbage collection
+
 
 print('All recipes complete!')
