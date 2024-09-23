@@ -1,0 +1,7 @@
+/var/spool/slurmd.spool/job14106879/slurm_script: line 24: 3911837 Killed                  python kmeans_clustering_n_9_20.py --n_clusters $N_CLUSTERS --run $run
+/var/spool/slurmd.spool/job14106879/slurm_script: line 24: 3911969 Killed                  python kmeans_clustering_n_9_20.py --n_clusters $N_CLUSTERS --run $run
+/var/spool/slurmd.spool/job14106879/slurm_script: line 24: 3912070 Killed                  python kmeans_clustering_n_9_20.py --n_clusters $N_CLUSTERS --run $run
+/var/spool/slurmd.spool/job14106879/slurm_script: line 24: 3912095 Killed                  python kmeans_clustering_n_9_20.py --n_clusters $N_CLUSTERS --run $run
+/var/spool/slurmd.spool/job14106879/slurm_script: line 24: 3912169 Killed                  python kmeans_clustering_n_9_20.py --n_clusters $N_CLUSTERS --run $run
+slurmstepd: error: *** JOB 14106879 ON gl3076 CANCELLED AT 2024-09-20T09:08:13 ***
+slurmstepd: error: Detected 5 oom_kill events in StepId=14106879.batch. Some of the step tasks have been OOM Killed.

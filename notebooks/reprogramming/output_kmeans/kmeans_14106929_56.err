@@ -1,0 +1,20 @@
+Traceback (most recent call last):
+  File "/home/oliven/scFoundationModels/notebooks/reprogramming/kmeans_clustering_n_9_20.py", line 26, in <module>
+    X_scaled = scaler.fit_transform(X)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/sklearn/utils/_set_output.py", line 313, in wrapped
+    data_to_wrap = f(self, X, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/sklearn/base.py", line 1098, in fit_transform
+    return self.fit(X, **fit_params).transform(X)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/sklearn/preprocessing/_data.py", line 878, in fit
+    return self.partial_fit(X, y, sample_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/sklearn/base.py", line 1473, in wrapper
+    return fit_method(estimator, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/sklearn/preprocessing/_data.py", line 942, in partial_fit
+    raise ValueError(
+ValueError: Cannot center sparse matrices: pass `with_mean=False` instead. See docstring for motivation and alternatives.
+slurmstepd: error: *** JOB 14107002 ON gl3171 CANCELLED AT 2024-09-20T09:13:51 ***
