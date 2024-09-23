@@ -1,0 +1,55 @@
+Traceback (most recent call last):
+  File "/home/oliven/scFoundationModels/notebooks/reprogramming/kmeans_clustering_n_9_20.py", line 45, in <module>
+    adata.write('/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad')
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_core/anndata.py", line 1863, in write_h5ad
+    write_h5ad(
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_io/h5ad.py", line 74, in write_h5ad
+    with h5py.File(filepath, mode) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 122, in h5py.h5f.create
+FileNotFoundError: [Errno 2] Unable to create file (unable to open file: name = '/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242)
+Traceback (most recent call last):
+  File "/home/oliven/scFoundationModels/notebooks/reprogramming/kmeans_clustering_n_9_20.py", line 45, in <module>
+    adata.write('/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad')
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_core/anndata.py", line 1863, in write_h5ad
+    write_h5ad(
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_io/h5ad.py", line 74, in write_h5ad
+    with h5py.File(filepath, mode) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 122, in h5py.h5f.create
+FileNotFoundError: [Errno 2] Unable to create file (unable to open file: name = '/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242)
+Traceback (most recent call last):
+  File "/home/oliven/scFoundationModels/notebooks/reprogramming/kmeans_clustering_n_9_20.py", line 45, in <module>
+    adata.write('/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad')
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_core/anndata.py", line 1863, in write_h5ad
+    write_h5ad(
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/anndata/_io/h5ad.py", line 74, in write_h5ad
+    with h5py.File(filepath, mode) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 562, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/oliven/miniconda3/lib/python3.12/site-packages/h5py/_hl/files.py", line 241, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 122, in h5py.h5f.create
+FileNotFoundError: [Errno 2] Unable to create file (unable to open file: name = '/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242)
+slurmstepd: error: *** JOB 14107208 ON gl3310 CANCELLED AT 2024-09-20T15:22:00 DUE TO TIME LIMIT ***

@@ -1,0 +1,51 @@
+Source cells,Source,Target cells,Target,Treatment,TFs,Species,Cell Transplantation,Published Year,PMID
+Embryonic Fibroblasts and Adult Skin Fibroblasts,,Dopamine Neurons,,"ASCL1, LXMLA, and NURR1",ASCL1 LXMLA NURR1,Both,Yes,2011,2172534_27
+Fetal Fibroblasts and Postnatal Foreskin Fibroblasts,,Neuronal Cells,,"BRN2, ASCL1, MYT1L, and NEUROD1",BRN2 ASCL1 MYT1L NEUROD1,Human,,2011,21617644_28
+Embryonic Fibroblasts and Postnatal Fibroblasts,,Neuronal Cells,,"ASCL1, BRN2, MYT1L, LMX1A, and FOXA2",ASCL1 BRN2 MYT1L LMX1A FOXA2,Human,,2011,21646515_29
+Embryonic Fibroblasts and Fetal Foreskin Fibroblasts,,Neural Stem Cells,,SOX2,SOX2,Both,Yes,2012,22683203_31
+Fibroblasts (IMR90 Cells),,Dopaminergic Neurons,,"MASH1, NGN2, SOX2, NURR1, and PITX3 + A Dominant-Negative P53",MASH1 NGN2 SOX2 NURR1 PITX3 P53,Human,Yes,2014,25129808_214
+Adult Skin Fibroblasts,,Motor Neurons,,"NEUROG2, SOX11, ISL1, and LXH3",NEUROG2 SOX11 ISL1 LXH3,Human,,2016,26725112_46
+Umbilical Cord Blood Cells,,Neural Stem Cells,,SOX2 and HMGA2,SOX2 HMGA2,Human,,2017,28844127_33
+Fibroblast-Like Cells from Retinal Tissues,,Neuronal Cells,,ASCL1 and PAX6,ASCL1 PAX6,Human,,2017,28697461_217
+Pluripotent Stem Cell-Derived Cardiomyocytes,,Neuronal Cells,,"BRN2, ASCL1, MYT1L, and NEUROD1",BRN2 ASCL1 MYT1L NEUROD1,Both,,2017,28327614_218
+Fibroblasts,,Motor Neurons,,"ASCL1, ISL1, NEUROD1, BRN2, HB9, LHX3, MYT1L, and NGN2",ASCL1 ISL1 NEUROD1 BRN2 HB9 LHX3 MYT1L NGN2,Human,,2017,28099929_219
+Fibroblasts,,Neurocytes,,"SOX2, GATA3, and NEUROD1",SOX2 GATA3 NEUROD1,Human,,2017,28587331_62
+Dermal Fibroblasts,,Neural Precursor Cells,,SOX2 and PAX6,SOX2 PAX6,Human,,2018,30450440_34
+Embryonic Fibroblasts and Newborn Foreskin Fibroblasts,,Neural Stem Cells,,Ptf1a,Ptf1a,Both,Yes,2018,30030434_35
+Adult Fibroblasts,,Neural Precursor Cells,,"SOX2; SOX2 and PAX6; SOX2 and LMX1A; SOX2, LMX1A, and FOXA2","SOX2; SOX2 and PAX6; SOX2 and LMX1A; SOX2, LMX1A, and FOXA2",Human,,2018,30018471_36
+Umbilical Cord Mesenchymal Stem Cells,,Neuronal Cells,,"SOX2, ASCL1, and NEUROG2","SOX2, ASCL1, and NEUROG2",Human,,2018,29937717_221
+Pericytes,,Neuronal Cells,,ASCL1 and SOX2,ASCL1 and SOX2,Human,,2018,29915193_181
+Cord Blood CD133(+) Cells,,Neuronal Cells,,"FOXM1, SOX2, MYC, SALL4, and STAT6","FOXM1, SOX2, MYC, SALL4, and STAT6",Human,,2018,29653196_38
+Peripheral CD34(+) Cells,,Neural Stem Cells,,"AR, SOX2, SMAD3, MYC, JUN, WT1, TAL1, SPI1, and RUNX1","AR, SOX2, SMAD3, MYC, JUN, WT1, TAL1, SPI1, and RUNX1",Human,,2018,29653196_38
+Urine Epithelial-Like Cells,,Neural Stem Cells,,"POU3F2, SOX2, BACH1, AR, PBX1, and NANOG","POU3F2, SOX2, BACH1, AR, PBX1, and NANOG",Human,,2018,29653196_38
+Astrocytes and Foreskin Fibroblasts,,Noradrenergic Neurons,,"ASCL1, PHOX2B, AP-2A, GATA3, HAND2, NURR1, and PHOX2A","ASCL1, PHOX2B, AP-2A, GATA3, HAND2, NURR1, and PHOX2A",Both,Yes,2019,31315047_222
+"Bone Marrow-Derived Cells, Fibroblasts, and Keratinocytes",,Neural Precursor Cells,,"MSI1, NGN2, and MBD2","MSI1, NGN2, and MBD2",Human,Yes,2019,31196173_37
+Cardiac Fibroblasts,,Cardiomyocytes,,"GATA4, MEF2C, TBX5, MESP1, MYOCD","GATA4, MEF2C, TBX5, MESP1, MYOCD",Human,,2013,23861494_52
+Embryonic Stem Cells-Derived Fibroblasts,,Cardiomyocytes,,"GATA4, MEF2C, TBX5, ESRRG, MESP1, ZFPM2, MYOCD","GATA4, MEF2C, TBX5, ESRRG, MESP1, ZFPM2, MYOCD",Human,Yes,2013,24319660_53
+Embryonic Fibroblasts,,Hepatocytes,,"HNF1A, HNF4A, HNF6, ATF5, PROX1, CEBPA, and MYC + TP53 Knockdown","HNF1A, HNF4A, HNF6, ATF5, PROX1, CEBPA, and MYC + TP53 Knockdown",Human,Yes,2014,24582926_57
+Fetal and Adult Fibroblasts and Adipose Tissue-Derived Mesenchymal Stem Cells,,Hepatocytes,,"FOXA3, HNF1A, and HNF4A + SV40 Large T Antigen","FOXA3, HNF1A, and HNF4A + SV40 Large T Antigen",Human,Yes,2014,24582927_58
+Fibroblasts (BJ and MRC-5 Cells),,Hepatocytes,,"HNF1A, and Any Two of the Three Factors: FOXA1, FOXA3, and HNF4A","HNF1A, and Any Two of the Three Factors: FOXA1, FOXA3, and HNF4A",Human,,2014,24963715_59
+Fetal Lung Fibroblasts,,Hepatocytes,,"ATF5, PROX1, FOXA2, FOXA3, and HNF4A","ATF5, PROX1, FOXA2, FOXA3, and HNF4A",Human,,2017,29192290_61
+Fibroblasts,,Hepatocytes,,"OCT4, FOXA2, HNF1A, and GATA3","OCT4, FOXA2, HNF1A, and GATA3",Human,,2017,28587331_62
+Liver Cells,,β Cells,,"PDX1, PAX4, and MAFA","PDX1, PAX4, and MAFA",Human,,2014,24504462_66
+Fibroblasts (3T3 Cells) and Adult Dermal Fibroblasts,,Megakaryocyte,,"NFE2, MAFG, and MAFK","NFE2, MAFG, and MAFK",Both,Yes,2012,22855609_75
+Fibroblasts,,Antigen-Presenting Dendritic Cells,,"PU.1, IRF8, and BATF3","PU.1, IRF8, and BATF3",Both,,2018,30530727_78
+Neonatal Foreskin Fibroblasts,,Chondrogenic Cells,,"c-MYC, KLF4, and SOX9","c-MYC, KLF4, and SOX9",Human,Yes,2013,24146984_224
+Dermal Fibroblasts,,Osteoblasts,,"OCT3/4 and OCT6 or OCT9 + L-MYC, c-MYC, or N-MYC","OCT3/4 and OCT6 or OCT9 + L-MYC, c-MYC, or N-MYC",Human,,2015,26499074_79
+Fibroblasts,,Osteoblasts,,"RUNX2, OCT4, OSTERIX, and L-MYC","RUNX2, OCT4, OSTERIX, and L-MYC",Human,Yes,2015,25918395_80
+Gingival Fibroblasts and Adult Dermal Fibroblasts,,Osteoblasts,,"OCT4, OSTERIX, and L-MYC","OCT4, OSTERIX, and L-MYC",Human,Yes,2016,26990860_81
+Dermal Fibroblasts,,Myoblasts,,MYOD1 and MYCL,MYOD1 and MYCL,Human,Yes,2017,28501623_83
+Embryonic Fibroblasts and Newborn Foreskin Fibroblasts,,Brown Fat Cells,,PRDM16 and CEBPB,PRDM16 and CEBPB,Both,Yes,2009,19641492_95
+Iris-Derived Cells,,Photoreceptor Cells,,"CRX, RAX, and NEUROD","CRX, RAX, and NEUROD",Human,,2012,22558175_85
+Embryonic Fibroblasts and Adult Tail-Tip Dermal Fibroblasts,,Melanocytes,,"MITF, SOX10, and PAX3","MITF, SOX10, and PAX3",Both,Yes,2014,25510211_97
+Adipose Tissue-Derived Stromal Cells,,Endothelial Cells,,SOX18,SOX18,Human,,2014,25290189_93
+Dermal Fibroblasts,,Photoreceptor Cells,,"CRX, RAX, OTX2, and NEUROD","CRX, RAX, OTX2, and NEUROD",Human,,2014,24456169_86
+Fibroblasts,,Sweat Gland Cells,,NF-κB and LEF-1,NF-κB and LEF-1,Human,Yes,2015,26566868_91
+Amniotic Fluid Stemm Cells,,Pluripotent Stem Cells,,OCT4,OCT4,Human,,2016,27019637_225
+"Embryonic Fibroblasts, Adult Tail-Tip Dermal Fibroblasts, Postnatal Foreskin Fibroblasts, and Fetal Dermal Fibroblasts",,Renal Tubular Epithelial Cells,,"EMX2, HNF1B, HNF4A, and PAX8","EMX2, HNF1B, HNF4A, and PAX8",Both,Yes,2016,27820600_99
+Endothelial Progenitor Cells,,Smooth Muscle Cells,,MYOCD,MYOCD,Human,,2016,26874281_89
+Postnatal Dermal Fibroblasts,,Endothelial Cells,,ER71/ETV2 (ETS Variant 2),ER71/ETV2 (ETS Variant 2),Human,Yes,2017,28003219_94
+Dermal Fibroblasts,,Adipocytes,,PPARG2,PPARG2,Human,,2017,28982679_88
+Embryonic Fibroblasts and Umbilical Vein Endothelial Cells,,Intestine Progenitor Cells,,"HNF4A, FOXA3, GATA6, and CDX2","HNF4A, FOXA3, GATA6, and CDX2",Both,Yes,2017,28943029_100
+Embryonic Fibroblasts and Adult Dermal Fibroblasts,,Smooth Muscle Cells,,"MYOCD, GATA6, and MEF2C","MYOCD, GATA6, and MEF2C",Both,,2018,30026272_90
+Renal Proximal Tubular Epithelial (HK2) Cells,,Nephron Progenitor Cells,,"SNAI2, EYA1, and SIX1","SNAI2, EYA1, and SIX1",Human,,2019,30827514_103
