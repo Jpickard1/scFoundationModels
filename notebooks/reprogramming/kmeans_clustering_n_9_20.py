@@ -42,4 +42,4 @@ if 'silhouette_scores' not in adata.uns:
 adata.uns['silhouette_scores'][f'kmeans_{args.n_clusters}_{args.run}'] = score
 
 # Optionally save the updated adata object after each run
-adata.write('/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_many_clusters.h5ad')
+adata.write('/nfs/turbo/umms-indikar/shared/projects/DARPA_AI/in-silico-reprogramming/fibroblast_typing_9_20_n/output_kmeans/ts_fb_' + str(args.n_clusters) + '_' + str(args.run) + '_clusters.h5ad')
